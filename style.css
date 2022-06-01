@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;&family=Ubuntu:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(238, 247, 255);
+  padding: 2rem;
+  font-family: Ubuntu, Roboto, sans-serif;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  height: 60px;
+  width: 330px;
+  border-radius: 100px;
+  box-shadow: 6px 6px 10px rgba(151, 151, 151, 0.735),
+    6px 6px 10px rgba(151, 151, 151, 0.45);
+  cursor: pointer;
+  transition: width 0.8s;
+}
+.input {
+  position: absolute;
+  color: rgb(49, 49, 49);
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  left: 20%;
+  outline: none;
+  transition: width 1s;
+  transition-delay: 0.8s;
+}
+.search {
+  position: absolute;
+  width: 35px;
+}
+.mic {
+  position: absolute;
+  width: 40px;
+  right: 3%;
+  transition: width 1s;
+  transition-delay: 0.1s;
+}
+.active.search-container {
+  width: 54px;
+}
+.active .input {
+  width: 0;
+}
+.active .mic {
+  width: 0;
+}
